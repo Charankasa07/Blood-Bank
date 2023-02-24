@@ -16,11 +16,11 @@ const schema = mongoose.Schema({
         type:Number,
         required:true
     },
-    blood:{
+    address:{
         type:String,
         required:true
     }
 }
-    ,{collection:"User"},{strict:true})
+    ,{collection:"Hospital"},{strict:true})
 
-module.exports = mongoose.model("user",schema)
+module.exports = mongoose.model("hospital",schema)
